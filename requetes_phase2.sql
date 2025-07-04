@@ -23,4 +23,8 @@ LEFT JOIN scores AS s ON j.id = s.id_joueur
 GROUP BY j.id;
 
 --5. Donner le score moyen obtenu par chaque joueur, avec leur pseudo.
+SELECT j.pseudo, AVG(s.score) AS moyenne
+FROM joueurs AS j
+JOIN scores AS s ON j.id = s.id_joueur
+GROUP by j.id;
 
