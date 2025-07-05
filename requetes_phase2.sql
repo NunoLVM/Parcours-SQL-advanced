@@ -41,7 +41,7 @@ SELECT e.nom AS equipe, j.pseudo, j.pays
 FROM membres_equipes AS me
 JOIN equipes AS e ON me.id_equipe = e.id
 JOIN joueurs AS j ON me.id_joueur = j.id
-ORDER BY e.nom
+ORDER BY e.nom;
 
 --8. Afficher les jeux ayant eu plus de 3 sessions différentes.
 SELECT jeux.titre, COUNT(s.id) AS total_sessions
