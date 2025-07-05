@@ -1,6 +1,6 @@
 --1. Afficher les scores de chaque joueur pour la session 12, triés par score décroissant.
 SELECT j.pseudo, s.score 
-FROM score AS s
+FROM scores AS s
 JOIN joueurs AS j ON s.id_joueur = j.id
 WHERE s.id_session = 12
 ORDER BY s.score DESC;
